@@ -98,7 +98,6 @@ io.on('connection', (socket) => {
         console.log('user is disconnect');
     });
     socket.on('chat message', (msg) => {
-        let date = new Date();
-        io.emit('message', msg.msg, msg.user, date);
+        io.emit('message', msg.msg, msg.user, msg.date);
     })
 });

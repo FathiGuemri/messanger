@@ -1,13 +1,3 @@
-a {
-    color: #00B7FF;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font: 13px Helvetica, Arial;
 }
@@ -18,20 +8,6 @@ form {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-form input {
-    border: 0;
-    padding: 10px;
-    width: 90%;
-    margin-right: .5%;
-}
-
-form button {
-    width: 9%;
-    background: rgb(130, 224, 255);
-    border: none;
-    padding: 10px;
 }
 
 #messages {
@@ -273,4 +249,25 @@ p.name {
     border-radius: 25px;
     background-color: #78e08f;
     padding: 10px;
+}
+
+form i {
+    color: #c23616;
+}
+
+.fas.mr-3.fa-user-tie {
+    color: #4cd137;
+}
+
+input#name {
+    border-bottom: 1px solid #EEE !important;
+    border-radius: 0 !important;
+    height: 40px !important;
+}
+
+button.input-group-text.send_btn {
+    outline: none;
+    position: absolute;
+    top: 30px;
+    right: 43px;
 }
