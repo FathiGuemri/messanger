@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  //- ul#msg
+  //- form(action="")
+  //-   //- input(type="text" id="name" placeholder="Enter your name")
+  //-   //- input(type="text" id="m" autocomplete="off"  placeholder="Enter your message")
+  //-   //- button send
+  div.container-fluid.h-100
+    
+    div(class="row justify-content-center h-100")
+
+        div(class="col-md-8 col-xl-6 chat")
+            .card
+                .card-header.msg_head
+                    .d-flex.bd-highlight
+                        .user_info
+                            span Chat with world online
+                .card-body.msg_card_body
+                    ul.d-flex.justify-content-end.mb-4#msg.flex-column 
+                .card-footer
+                    form.input-group(action="")
+                        .input-group-append.w-75
+                            span.input-group-text.attach_btn
+                                i.fas.fa-user
+                            input(type="text" id="name" name="name" required class="form-control type_msg" autocomplete="off" placeholder="Enter your name")
+                        .input-group-append.w-75
+                            span.input-group-text.attach_btn
+                                i.fas.fa-paperclip
+                            textarea(id="m" name="Message" required class="form-control type_msg" placeholder="Type your message...")
+                        .input-group-append
+                            button.input-group-text.send_btn
+                                i.fas.fa-location-arrow
